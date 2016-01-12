@@ -1,0 +1,238 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* BASIC STYLES
+
+Base: 10px, Ratios: 1.6.
+
+*/
+
+html {
+  font-family: "Gotham Black", Arial, sans-serif;
+  font-size: 16px;
+}
+
+main {
+ font-size: 62.5%;
+}
+
+h1, h2, p {
+  line-height: 1.5em;
+}
+
+h1 {
+ font-size: 2.63em;
+  font-weight: bold;
+ color: #6d6370;
+}
+
+h2 {
+ font-family: Helvetica, sans-serif;
+ color: #6d6370;
+ font-size: 1.973em;
+ font-weight: bold;
+ margin-top: 24px;
+}
+
+p {
+ color: black;
+ font-size: 1.48em;
+}
+
+p.lead {
+ margin-top: 12px;
+}
+
+/* QUIZ STYLES */
+
+#question-container, #score-container {
+  margin: 0 20px;
+}
+
+#count {
+  color: lightgrey;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  font-size: 3.5em;
+  opacity: 0.75;
+  left: -12px;
+  position: absolute;
+}
+
+#question-container h2 {
+  padding-left: 14%;
+  position: relative;
+}
+
+#answer-container p {
+  display: none;
+}
+
+#choice-container {
+  text-align: right;
+  margin: 65px 20px 0 20px;
+}
+
+#choice1:before, #choice2:before, #choice3:before, #choice4:before {
+  content: " ";
+  width: 100px;
+  height: 105px;
+  position: absolute;
+  top: -35px;
+  left: 0px;
+}
+
+#choice1:before {
+  background: url(../img/g266.png) 0 0;
+}
+
+#choice2:before {
+ background: url(../img/g266.png) 0 -110px;
+}
+
+#choice3:before {
+ background: url(../img/g266.png) 0 -220px;
+}
+
+#choice4:before {
+ background: url(../img/g266.png) 0 -330px;
+}
+
+#choice1 {
+  background-color: #ff6712;
+  position:relative;
+}
+
+#choice2 {
+  background-color: #5f56aa;
+  position: relative;
+}
+
+#choice3 {
+  background-color: #00a5bc;
+  position: relative;
+}
+
+#choice4 {
+ background-color: #9ed345;
+  position: relative;
+}
+
+.choice {
+  text-align: right;
+  height: 72px;
+	padding: 12px 12px 12px 92px;
+  margin: 12px 0px;
+	color: white;
+  font-weight: bold;
+	font-size: 1.45em;
+  line-height: 1.3em;
+  text-shadow: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  background: -webkit-linear-gradient(right,rgba(0,0,0,0.30),rgba(255,255,255,0),rgba(0,0,0,0.30)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(left,rgba(0,0,0,0.30),rgba(255,255,255,0),rgba(0,0,0,0.30)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(left,rgba(0,0,0,0.30),rgba(255,255,255,0),rgba(0,0,0,0.30)); /*Fx 3.6-15*/
+  background: linear-gradient(to left, rgba(0,0,0,0.30), rgba(255,255,255,0),rgba(0,0,0,0.30)); /*Standard*/
+}
+
+.choice:hover {
+  box-shadow: 3px 3px 5px #888;
+  -webkit-box-shadow: 3px 3px 5px #888;
+  -moz-box-shadow: 3px 3px 5px #888;
+}
+
+#next {
+  margin-top:6px;
+  border: 3px solid #EEE;
+}
+
+#next:hover, #start:hover {
+ background-color: #2C689D;
+ border-color: #286090;
+}
+
+#score-container {
+  display: none;
+}
+
+/* SOCIAL ICONS */
+
+#facebook, #twitter {
+    margin-top: 6px;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#facebook {
+  background: url(../img/social-logos.png) 0 0;
+}
+
+#twitter {
+  background: url(../img/social-logos.png) 0 50px;
+  margin-left: 6px;
+}
+
+@media (min-width: 768px) {
+
+  main { font-size: 55%; }
+
+  h1 { font-size: 4.209em; }
+  h2 { font-size: 3.157em; }
+  p, .choice { font-size: 2.2em; }
+
+  #choice-container {
+   margin-top: 75px;
+  }
+
+  .choice {
+    margin: 12px 0px 12px 35%;
+  }
+}
