@@ -96,7 +96,7 @@ $(document).ready( function() {
 
     $("#twitter").click( function() {
         var twitterUrl = "http://twitter.com/share/?",
-        text = "text=I got " + score + " out of 4 correct. How much do you know about the Minimum Wage? Take the quiz ",
+        text = "text=I got " + score + " out of 4 correct on the minimum wage quiz. Think you can beat me? Give it a try! ",
         quizUrl = "&url=";
 
         var width  = 575,
@@ -120,7 +120,7 @@ $(document).ready( function() {
           FB.ui({
               method: 'feed',
               link: '',
-              name: 'I got ' + score + ' out of 4 correct',
+              name: 'I got ' + score + ' out of 4 correct on the minimum wage quiz. Think you can beat me? Give it a try!',
               caption: 'Take this quiz on the Minimum Wage',
               picture: ''
               }, function(response){});
