@@ -107,6 +107,7 @@ p.lead {
 #question-container h2 {
   padding-left: 14%;
   position: relative;
+  text-align: left;
 }
 
 #answer-container p {

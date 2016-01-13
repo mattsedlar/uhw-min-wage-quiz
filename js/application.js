@@ -131,7 +131,7 @@ $(document).ready( function() {
     $('.form-signup').submit(function () {
         if($(this).valid()) {
           $(this).remove();
-          $("#form-lead").html("Now let your friends know how you did!");
+          $("#form-lead").html("Thanks for your interest in raising the minimum wage. Now let your friends know how you did!");
           $("#score-container p").last().hide();
         }
     });
