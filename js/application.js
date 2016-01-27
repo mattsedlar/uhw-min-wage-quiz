@@ -96,8 +96,10 @@ $(document).ready( function() {
 
     $("#twitter").click( function() {
         var twitterUrl = "http://twitter.com/share/?",
-        text = "text=I got " + score + " out of 4 correct on the minimum wage quiz. Think you can beat me? Give it a try! ",
-        quizUrl = "&url=";
+        text = "text=I got " + 
+                             score + 
+                             " out of 4 correct on the minimum wage quiz. Think you can beat me? Give it a try! FPPC ID 1380738",
+        quizUrl = "&url=http://liftupca.net/quiz/";
 
         var width  = 575,
         height = 400,
@@ -119,10 +121,10 @@ $(document).ready( function() {
     $("#facebook").click( function() {
           FB.ui({
               method: 'feed',
-              link: '',
+              link: 'http://liftupca.net/quiz/',
               name: 'I got ' + score + ' out of 4 correct on the minimum wage quiz. Think you can beat me? Give it a try!',
-              caption: 'Take this quiz on the Minimum Wage',
-              picture: ''
+              caption: 'Paid for by Lift Up California FPPC ID 1380738',
+              picture: 'http://www.liftupcawages.com/wp-content/uploads/sites/2/2016/01/FB-share.png'
               }, function(response){});
               ga('send', 'event', 'button', 'click', 'facebook-share', score);
     });
